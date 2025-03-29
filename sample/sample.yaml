@@ -1,0 +1,25 @@
+# config.yaml
+log_level: INFO
+validate: false
+output_file: sample/results/output.txt
+service_type: azure_openai  # Default service type
+save_intermediate: true
+intermediate_dir: sample/llm_outputs
+
+pipeline:
+  steps:
+    - name: code_analysis  # For original functionality
+      prompt_file: sample/sample_compare_doc_to_code_prompt.txt
+
+      variables:
+        code: sample/code.py
+        documentation: sample/sample_doc.md
+      output_key: code_analysis
+      service_type: azure_openai  
+
+    - name: generate_recommendations
+      prompt_file: sample/sample_code_recommendations_prompt.txt
+      variables:
+         analysis: $outputs.code_analysis
+         requirements: sample/sample_code_style.md
+      output_key: final_recommendations

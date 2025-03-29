@@ -1,0 +1,9 @@
+I want you to analyze the following code:
+
+{{code}}
+
+And compare it with this documentation:
+
+{{documentation}}
+
+Please identify any inconsistencies or potential bugs.

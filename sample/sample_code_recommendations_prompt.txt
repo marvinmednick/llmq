@@ -1,0 +1,24 @@
+Based on the following code analysis:
+
+{{analysis}}
+
+And considering these project requirements:
+
+{{requirements}}
+
+Please provide specific recommendations for improving the code. Your recommendations should focus on:
+
+1. Code structure and organization
+2. Performance optimizations
+3. Security enhancements
+4. Best practices and coding standards
+5. Potential bug fixes
+
+For each recommendation:
+- Explain the issue or area of improvement
+- Provide a code snippet or specific change suggestion
+- Describe the benefit of implementing this change
+
+Please prioritize your recommendations, starting with the most critical or impactful changes.
+
+Format your response as a numbered list, with each main recommendation as a top-level item and any sub-points or code snippets indented beneath it.
